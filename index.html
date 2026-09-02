@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tsara | Music Producer, DJ, Sound Designer & Audio Engineer</title>
+  <meta name="description" content="Official website of Tsara (Peacemore Magonya) — Dublin-based South African Music Producer, DJ, Sound Designer & Audio Engineer specialising in Amapiano and Afro House.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.7; }
+    }
+    .glow-effect {
+      animation: pulse-glow 4s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-black text-slate-100 font-sans antialiased selection:bg-fuchsia-500 selection:text-black">
+
+  <nav class="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md border-b border-white/10 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="#home" class="text-2xl font-black tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-500 via-purple-500 to-cyan-400">
+        TSARA
+      </a>
+      
+      <div class="hidden lg:flex items-center space-x-7 text-xs uppercase tracking-wider font-semibold">
+        <a href="#about" class="hover:text-fuchsia-400 transition">About</a>
+        <a href="#skills" class="hover:text-fuchsia-400 transition">Skills & Tech</a>
+        <a href="#projects" class="hover:text-fuchsia-400 transition">Projects & Shows</a>
+        <a href="#education" class="hover:text-fuchsia-400 transition">Education</a>
+        <a href="#contact" class="bg-gradient-to-r from-fuchsia-600 to-purple-600 hover:from-fuchsia-500 hover:to-purple-500 text-white px-5 py-2 rounded-full transition shadow-lg shadow-fuchsia-500/25">Contact & Booking</a>
+      </div>
+
+      <button id="menu-btn" aria-label="Toggle Menu" class="lg:hidden text-white focus:outline-none">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden lg:hidden bg-zinc-950 border-b border-white/10 px-6 py-6 space-y-4 text-xs uppercase tracking-wider font-semibold">
+      <a href="#about" class="block hover:text-fuchsia-400">About</a>
+      <a href="#skills" class="block hover:text-fuchsia-400">Skills & Tech</a>
+      <a href="#projects" class="block hover:text-fuchsia-400">Projects & Shows</a>
+      <a href="#education" class="block hover:text-fuchsia-400">Education</a>
+      <a href="#contact" class="inline-block w-full text-center bg-gradient-to-r from-fuchsia-600 to-purple-600 text-white py-3 rounded-full">Contact & Booking</a>
+    </div>
+  </nav>
+
+  <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <div class="absolute -top-40 -left-40 w-96 h-96 bg-fuchsia-600/30 rounded-full blur-[128px] glow-effect pointer-events-none"></div>
+    <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-cyan-600/30 rounded-full blur-[128px] glow-effect pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto px-6 text-center relative z-10">
+      <p class="text-fuchsia-400 font-mono tracking-widest text-xs sm:text-sm uppercase mb-4">Peacemore Magonya • Dublin, Ireland</p>
+      <h1 class="text-6xl sm:text-8xl md:text-9xl font-black tracking-tighter uppercase mb-4 text-white drop-shadow-2xl">
+        TSARA
+      </h1>
+      <h2 class="text-lg sm:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-400 to-cyan-400 uppercase tracking-widest mb-6">
+        Music Producer | DJ | Sound Designer | Audio Engineer
+      </h2>
+      <p class="max-w-2xl mx-auto text-base sm:text-lg text-zinc-400 font-light mb-10 leading-relaxed">
+        Specialising in Amapiano, Afro House, and African Electronic Music. Combining traditional rhythms with cutting-edge sound synthesis, audio engineering, and digital live performance.
+      </p>
+      
+      <div class="flex flex-wrap justify-center gap-4 mb-12">
+        <a href="#contact" class="bg-gradient-to-r from-fuchsia-600 to-purple-600 hover:from-fuchsia-500 hover:to-purple-500 text-white font-bold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition transform hover:-translate-y-1 shadow-xl shadow-fuchsia-600/30">
+          Book & Enquire
+        </a>
+        <a href="#projects" class="border border-white/20 hover:border-fuchsia-400 hover:bg-fuchsia-400/10 text-white font-bold px-8 py-4 rounded-full text-sm uppercase tracking-wider transition transform hover:-translate-y-1">
+          Explore Discography & Shows
+        </a>
+      </div>
+
+      <div class="flex flex-wrap justify-center gap-6 text-xs uppercase font-mono text-zinc-400">
+        <a href="https://soundcloud.com/tsara-afrika-borwa" target="_blank" rel="noopener noreferrer" class="hover:text-fuchsia-400 transition">SoundCloud</a>
+        <span>•</span>
+        <a href="https://open.spotify.com/artist/1kW5zDxZdTAibIqVcF0LAl" target="_blank" rel="noopener noreferrer" class="hover:text-fuchsia-400 transition">Spotify</a>
+        <span>•</span>
+        <a href="https://music.apple.com/us/artist/tsara/1179397686" target="_blank" rel="noopener noreferrer" class="hover:text-fuchsia-400 transition">Apple Music</a>
+        <span>•</span>
+        <a href="https://www.instagram.com/tsara_abh" target="_blank" rel="noopener noreferrer" class="hover:text-fuchsia-400 transition">Instagram</a>
+        <span>•</span>
+        <a href="https://www.tiktok.com/@tsara_abh" target="_blank" rel="noopener noreferrer" class="hover:text-fuchsia-400 transition">TikTok</a>
+        <span>•</span>
+        <a href="https://www.linkedin.com/in/peacemoremagonya" target="_blank" rel="noopener noreferrer" class="hover:text-fuchsia-400 transition">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-24 border-t border-white/10 bg-zinc-950">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-3 gap-12 items-start">
+        
+        <div class="lg:col-span-2 space-y-6">
+          <p class="text-fuchsia-400 font-mono text-xs uppercase tracking-widest">Biography</p>
+          <h2 class="text-4xl sm:text-5xl font-extrabold uppercase tracking-tight text-white">About Tsara</h2>
+          <p class="text-zinc-300 text-base sm:text-lg leading-relaxed">
+            Peacemore Magonya, professionally known as <strong>Tsara</strong>, is a Dublin-based South African music producer, DJ, sound designer, and audio engineer. His musical identity is deeply rooted in Amapiano, Afro House, and contemporary African electronic music, combining traditional African musical influences with modern studio production, sound design, and live performance.
+          </p>
+          <p class="text-zinc-400 leading-relaxed">
+            Alongside studying BA (Hons) in Modern Music at BIMM Dublin, Tsara produces original tracks, hosts the weekly <em>We Play Good MusiQ</em> show on Dublin Digital Radio, and performs across digital and live stages. His practice spans composition, arrangement, audio editing, vocal production, mixing, sound synthesis, and immersive soundscapes.
+          </p>
+          <p class="text-zinc-400 leading-relaxed">
+            Driven by a vision to build a sustainable international career, Tsara focuses on releasing high-impact original music, collaborating with recording artists, and engineering audio for film, video games, interactive media, and digital platforms.
+          </p>
+        </div>
+
+        <div class="bg-zinc-900 border border-white/10 p-6 rounded-3xl space-y-6">
+          <h3 class="text-xl font-bold text-white uppercase tracking-wider">Quick Info</h3>
+          <ul class="space-y-4 text-sm text-zinc-300">
+            <li>
+              <strong class="text-fuchsia-400 block text-xs uppercase tracking-wider">Legal Name</strong>
+              Peacemore Magonya
+            </li>
+            <li>
+              <strong class="text-fuchsia-400 block text-xs uppercase tracking-wider">Base Location</strong>
+              Dublin, Ireland (South African Origin)
+            </li>
+            <li>
+              <strong class="text-fuchsia-400 block text-xs uppercase tracking-wider">Education</strong>
+              BIMM Dublin — BA (Hons) Modern Music
+            </li>
+            <li>
+              <strong class="text-fuchsia-400 block text-xs uppercase tracking-wider">Radio Residency</strong>
+              Weekly Host on Dublin Digital Radio (DDR)
+            </li>
+            <li>
+              <strong class="text-fuchsia-400 block text-xs uppercase tracking-wider">Key Hardware Setup</strong>
+              AlphaTheta / Pioneer XDJ-AZ Workflow
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-24 border-t border-white/10 bg-black">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <p class="text-cyan-400 font-mono text-xs uppercase tracking-widest mb-2">Technical Mastery</p>
+        <h2 class="text-4xl sm:text-5xl font-extrabold uppercase tracking-tight text-white">Skills & Tools</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-zinc-900/80 border border-white/10 p-6 rounded-2xl">
+          <h3 class="text-xl font-bold text-fuchsia-
