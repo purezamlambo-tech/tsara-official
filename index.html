@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tsara | Music Producer, DJ & Sound Designer</title>
+  <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome Icons for Social Media -->
+  <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-950 text-slate-100 font-sans antialiased min-h-screen flex flex-col scroll-smooth">
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
 
-  <!-- Sticky Navigation Bar -->
-  <header class="border-b border-slate-800 bg-slate-950/90 backdrop-blur sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-end md:justify-between items-center">
-      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#home" class="text-xl font-bold tracking-wider text-white">TSARA<span class="text-cyan-400">.</span></a>
+      <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+        <a href="#home" class="hover:text-cyan-400 transition">Home</a>
         <a href="#about" class="hover:text-cyan-400 transition">About</a>
-        <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
         <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
-        <a href="#education" class="hover:text-cyan-400 transition">Education</a>
         <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
       </nav>
-      <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm transition">Get In Touch</a>
+      <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm transition">Book Tsara</a>
     </div>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (Picture 1: tsara_profile.jpg) -->
   <section id="home" class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
     <div>
       <span class="text-cyan-400 font-mono text-sm tracking-widest uppercase">Dublin, Ireland</span>
@@ -42,17 +43,16 @@
     </div>
     <div class="flex justify-center">
       <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-cyan-500 shadow-2xl shadow-cyan-500/20">
-        <!-- Image 1: Hero Profile Photo -->
         <img src="tsara_profile.jpg" alt="Tsara Studio Photo" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop'">
       </div>
     </div>
   </section>
 
-  <!-- About Me Section -->
+  <!-- About Me Section (Picture 2: tsara_dj.jpg) -->
   <section id="about" class="bg-slate-900/50 py-16 border-y border-slate-800">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">About Me</h2>
-      <div class="grid md:grid-cols-3 gap-8">
+      <div class="grid md:grid-cols-3 gap-8 items-center">
         <div class="md:col-span-2 space-y-4 text-slate-300 leading-relaxed">
           <p>
             I am Tsara, a South African music producer, DJ, and sound designer based in Dublin, Ireland. My musical identity is deeply rooted in Amapiano, Afro House, and modern African electronic music.
@@ -61,7 +61,6 @@
             Currently studying Modern Music at BIMM Dublin, my work covers music production, composition, vocal tracking, sound design, audio editing, and live DJ sets. Through my weekly <em>We Play Good MusiQ</em> radio show on Dublin Digital Radio, I promote musical discovery, cultural exchange, and platform opportunities for emerging artists.
           </p>
         </div>
-        <!-- Image 2: About DJ Photo -->
         <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden p-2">
           <img src="tsara_dj.jpg" alt="Tsara DJing Live" class="rounded-lg w-full h-48 object-cover mb-3" onerror="this.src='https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop'">
           <p class="text-xs text-slate-400 text-center font-mono">Live Performance & Radio Presentation</p>
@@ -70,57 +69,15 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="py-16 max-w-6xl mx-auto px-6">
-    <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">Technical & Creative Skills</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-2xl">
-        <h3 class="text-lg font-bold text-cyan-400 mb-4">Music Production & Sound Design</h3>
-        <ul class="text-sm text-slate-300 space-y-2">
-          <li>• Amapiano, Afro House & Electronic Production</li>
-          <li>• MIDI & Drum Programming</li>
-          <li>• Vocal Production & Editing</li>
-          <li>• Sampling & Custom Sample Libraries</li>
-          <li>• Sound Synthesis & Immersive Soundscapes</li>
-          <li>• Music Composition for Media</li>
-        </ul>
-      </div>
-
-      <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-2xl">
-        <h3 class="text-lg font-bold text-cyan-400 mb-4">Audio Engineering & DAWs</h3>
-        <ul class="text-sm text-slate-300 space-y-2">
-          <li>• DAWs: FL Studio, Ableton Live, Pro Tools</li>
-          <li>• Mixing & Basic Mastering</li>
-          <li>• Equalisation, Compression, De-essing</li>
-          <li>• Reverb & Delay Processing</li>
-          <li>• Microphones, Gain Staging & Signal Flow</li>
-          <li>• Plug-ins: FabFilter, UAD 1176/LA-2A, Valhalla</li>
-        </ul>
-      </div>
-
-      <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-2xl">
-        <h3 class="text-lg font-bold text-cyan-400 mb-4">DJing & Performance</h3>
-        <ul class="text-sm text-slate-300 space-y-2">
-          <li>• Live DJ Sets & Track Curation</li>
-          <li>• AlphaTheta / Pioneer XDJ-AZ Workflow</li>
-          <li>• Radio Presentation (Dublin Digital Radio)</li>
-          <li>• Livestream & Event Preparation</li>
-          <li>• Creative Direction & Artist Branding</li>
-          <li>• DJ Tuition & Mentoring</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Projects Gallery (3 Image Cards) -->
-  <section id="projects" class="bg-slate-900/50 py-16 border-y border-slate-800">
+  <!-- Featured Projects Gallery (Pictures 3, 4, 5: tsara_pic1.jpg, tsara_pic2.jpg, tsara_pic3.jpg) -->
+  <section id="projects" class="py-16">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">Featured Projects & Releases</h2>
       <div class="grid md:grid-cols-3 gap-6">
         
-        <!-- Image 3: Project 1 -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/50 transition">
-          <img src="tsara_pic1.jpg" alt="We Play Good MusiQ" class="w-full h-44 object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=800&auto=format&fit=crop'">
+        <!-- Project 1 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/50 transition">
+          <img src="tsara_pic1.jpg" alt="We Play Good MusiQ" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=800&auto=format&fit=crop'">
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <h3 class="text-lg font-bold text-white mb-2">We Play Good MusiQ</h3>
@@ -130,9 +87,9 @@
           </div>
         </div>
 
-        <!-- Image 4: Project 2 -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/50 transition">
-          <img src="tsara_pic2.jpg" alt="Make Me Feel Single" class="w-full h-44 object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop'">
+        <!-- Project 2 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/50 transition">
+          <img src="tsara_pic2.jpg" alt="Make Me Feel Single" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop'">
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <h3 class="text-lg font-bold text-white mb-2">Make Me Feel — Tsara ft. Lady LeSoul</h3>
@@ -142,9 +99,9 @@
           </div>
         </div>
 
-        <!-- Image 5: Project 3 -->
-        <div class="bg-slate-950 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/50 transition">
-          <img src="tsara_pic3.jpg" alt="Yanos Culture" class="w-full h-44 object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop'">
+        <!-- Project 3 -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/50 transition">
+          <img src="tsara_pic3.jpg" alt="Yanos Culture" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop'">
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <h3 class="text-lg font-bold text-white mb-2">Yanos Culture & Mix Series</h3>
@@ -158,84 +115,18 @@
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section id="education" class="py-16 max-w-6xl mx-auto px-6">
-    <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">Education & Credentials</h2>
-    <div class="bg-slate-900/40 border border-slate-800 p-8 rounded-2xl">
-      <div class="flex flex-col md:flex-row justify-between md:items-center mb-4">
-        <div>
-          <h3 class="text-xl font-bold text-white">BA (Honours) in Modern Music</h3>
-          <p class="text-cyan-400 font-medium">BIMM Dublin — Dublin, Ireland</p>
-        </div>
-        <span class="text-xs font-mono text-slate-400 bg-slate-800 px-3 py-1 rounded-full w-max mt-2 md:mt-0">Current Student (3rd Year)</span>
-      </div>
-      <p class="text-sm text-slate-300 mb-6">
-        Focusing on music production, audio engineering, sound design, digital performance, and composition for interactive media.
-      </p>
-      <h4 class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">Key Focus Areas:</h4>
-      <div class="flex flex-wrap gap-2 text-xs">
-        <span class="bg-slate-800 border border-slate-700 text-slate-300 px-3 py-1 rounded-md">Creative Mixing</span>
-        <span class="bg-slate-800 border border-slate-700 text-slate-300 px-3 py-1 rounded-md">Studio Vocal Production</span>
-        <span class="bg-slate-800 border border-slate-700 text-slate-300 px-3 py-1 rounded-md">Sound Design for Media</span>
-        <span class="bg-slate-800 border border-slate-700 text-slate-300 px-3 py-1 rounded-md">Game Audio Design</span>
-        <span class="bg-slate-800 border border-slate-700 text-slate-300 px-3 py-1 rounded-md">Digital Marketing</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="bg-slate-900/50 py-16 border-t border-slate-800">
+  <!-- Contact & Footer -->
+  <footer id="contact" class="bg-slate-900 border-t border-slate-800 py-12">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Let's Connect</h2>
-      <p class="text-slate-400 max-w-xl mx-auto mb-8">Available for music production, mixing, audio engineering, sound design for film/games, and DJ bookings.</p>
-      
-      <!-- Contact Info Cards -->
-      <div class="flex flex-wrap justify-center gap-6 mb-12">
-        <a href="mailto:peacemoremagonya@gmail.com" class="flex items-center gap-2 bg-slate-900 border border-slate-800 hover:border-cyan-400 px-4 py-2.5 rounded-xl text-slate-200 text-sm transition">
-          <i class="fa-solid fa-envelope text-cyan-400"></i> peacemoremagonya@gmail.com
-        </a>
-        <a href="tel:+353851154869" class="flex items-center gap-2 bg-slate-900 border border-slate-800 hover:border-cyan-400 px-4 py-2.5 rounded-xl text-slate-200 text-sm transition">
-          <i class="fa-solid fa-phone text-cyan-400"></i> +353 85 115 4869
-        </a>
-        <div class="flex items-center gap-2 bg-slate-900 border border-slate-800 px-4 py-2.5 rounded-xl text-slate-300 text-sm">
-          <i class="fa-solid fa-location-dot text-cyan-400"></i> Dublin, Ireland
-        </div>
+      <h2 class="text-2xl font-bold text-white mb-4">Get In Touch</h2>
+      <p class="text-slate-400 mb-6 max-w-md mx-auto">Available for live DJ bookings, radio appearances, sound design projects, and production collaborations.</p>
+      <div class="flex justify-center gap-6 text-2xl text-slate-400 mb-8">
+        <a href="https://open.spotify.com/artist/1kW5zDxZdTAibIqVcF0LAl" target="_blank" class="hover:text-green-500 transition"><i class="fa-brands fa-spotify"></i></a>
+        <a href="https://instagram.com" target="_blank" class="hover:text-pink-500 transition"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://soundcloud.com" target="_blank" class="hover:text-orange-500 transition"><i class="fa-brands fa-soundcloud"></i></a>
       </div>
-
-      <!-- Social Media Icons -->
-      <h3 class="text-sm font-semibold uppercase tracking-wider text-slate-400 mb-6">Stream & Follow Tsara</h3>
-      <div class="flex flex-wrap justify-center gap-4 text-sm font-medium">
-        <a href="https://open.spotify.com/artist/1kW5zDxZdTAibIqVcF0LAl" target="_blank" class="flex items-center gap-2.5 bg-slate-900 border border-slate-800 hover:border-green-500 hover:text-green-400 px-5 py-3 rounded-xl transition shadow-lg">
-          <i class="fa-brands fa-spotify text-green-500 text-xl"></i>
-          <span>Spotify</span>
-        </a>
-        <a href="https://music.apple.com/us/artist/tsara/1179397686" target="_blank" class="flex items-center gap-2.5 bg-slate-900 border border-slate-800 hover:border-rose-500 hover:text-rose-400 px-5 py-3 rounded-xl transition shadow-lg">
-          <i class="fa-brands fa-apple text-rose-500 text-xl"></i>
-          <span>Apple Music</span>
-        </a>
-        <a href="https://soundcloud.com/tsara-afrika-borwa" target="_blank" class="flex items-center gap-2.5 bg-slate-900 border border-slate-800 hover:border-orange-500 hover:text-orange-400 px-5 py-3 rounded-xl transition shadow-lg">
-          <i class="fa-brands fa-soundcloud text-orange-500 text-xl"></i>
-          <span>SoundCloud</span>
-        </a>
-        <a href="https://www.instagram.com/tsara_abh" target="_blank" class="flex items-center gap-2.5 bg-slate-900 border border-slate-800 hover:border-pink-500 hover:text-pink-400 px-5 py-3 rounded-xl transition shadow-lg">
-          <i class="fa-brands fa-instagram text-pink-500 text-xl"></i>
-          <span>Instagram</span>
-        </a>
-        <a href="https://www.tiktok.com/@tsara_abh" target="_blank" class="flex items-center gap-2.5 bg-slate-900 border border-slate-800 hover:border-cyan-400 hover:text-cyan-400 px-5 py-3 rounded-xl transition shadow-lg">
-          <i class="fa-brands fa-tiktok text-cyan-400 text-xl"></i>
-          <span>TikTok</span>
-        </a>
-        <a href="https://www.youtube.com" target="_blank" class="flex items-center gap-2.5 bg-slate-900 border border-slate-800 hover:border-red-500 hover:text-red-400 px-5 py-3 rounded-xl transition shadow-lg">
-          <i class="fa-brands fa-youtube text-red-500 text-xl"></i>
-          <span>YouTube</span>
-        </a>
-      </div>
+      <p class="text-xs text-slate-500">&copy; 2026 Tsara. All rights reserved.</p>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="border-t border-slate-800 py-6 text-center text-xs text-slate-500">
-    <p>© Tsara. Music Producer & Audio Engineer. All rights reserved.</p>
   </footer>
 
 </body>
