@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional Portfolio of Tsara (Peacemore Magonya) - Music Producer, DJ, Sound Designer & Audio Engineer based in Dublin, Ireland.">
+  <meta name="description" content="Official Portfolio & Contact Page for Tsara (Peacemore Magonya) - Music Producer, DJ, Sound Designer & Audio Engineer based in Dublin, Ireland.">
   <title>Tsara | Music Producer, DJ & Sound Designer</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -12,15 +12,18 @@
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
 
-  <!-- Navigation Header with Mobile Menu Tab -->
+  <!-- Navigation Header -->
   <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
       
+      <!-- Logo / Name -->
+      <a href="#home" class="text-xl font-black text-white tracking-wider">TSARA<span class="text-cyan-400">.</span></a>
+
       <!-- Desktop Menu Links -->
       <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
         <a href="#home" class="hover:text-cyan-400 transition">Home</a>
         <a href="#about" class="hover:text-cyan-400 transition">About</a>
-        <a href="#ai-assistant" class="hover:text-cyan-400 transition text-cyan-400 font-semibold"><i class="fa-solid fa-robot mr-1"></i> AI Assistant</a>
+        <a href="#chat-box" class="hover:text-cyan-400 transition text-cyan-400 font-semibold"><i class="fa-solid fa-comments mr-1"></i> Live Chat</a>
         <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
         <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
         <a href="#education" class="hover:text-cyan-400 transition">Education</a>
@@ -29,25 +32,26 @@
 
       <!-- Action Button -->
       <div class="hidden md:flex items-center gap-3">
-        <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm transition">Book Tsara</a>
+        <a href="#chat-box" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm transition flex items-center gap-2">
+          <i class="fa-solid fa-paper-plane"></i> Message Tsara
+        </a>
       </div>
 
-      <!-- Mobile Menu Button Tab -->
-      <div class="flex items-center justify-between w-full md:hidden">
-        <button id="menu-btn" class="text-slate-300 hover:text-white focus:outline-none flex items-center gap-2 border border-slate-800 px-3 py-2 rounded-lg bg-slate-900">
-          <i class="fa-solid fa-bars text-lg"></i>
-          <span class="text-xs font-semibold uppercase tracking-wider">Menu</span>
+      <!-- Mobile Menu Button -->
+      <div class="flex items-center justify-between md:hidden gap-3">
+        <a href="#chat-box" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-3 py-1.5 rounded-lg text-xs transition">Message</a>
+        <button id="menu-btn" class="text-slate-300 hover:text-white focus:outline-none flex items-center gap-2 border border-slate-800 px-3 py-1.5 rounded-lg bg-slate-900">
+          <i class="fa-solid fa-bars text-base"></i>
         </button>
-        <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-3 py-1.5 rounded-lg text-xs transition">Book Tsara</a>
       </div>
 
     </div>
 
-    <!-- Dropdown Mobile Menu Tab Panel -->
+    <!-- Mobile Navigation Panel -->
     <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
       <a href="#home" class="mobile-nav-link block text-slate-300 hover:text-cyan-400 py-2 text-sm font-medium border-b border-slate-800">Home</a>
       <a href="#about" class="mobile-nav-link block text-slate-300 hover:text-cyan-400 py-2 text-sm font-medium border-b border-slate-800">About</a>
-      <a href="#ai-assistant" class="mobile-nav-link block text-cyan-400 hover:text-cyan-300 py-2 text-sm font-semibold border-b border-slate-800"><i class="fa-solid fa-robot mr-1"></i> AI Assistant</a>
+      <a href="#chat-box" class="mobile-nav-link block text-cyan-400 hover:text-cyan-300 py-2 text-sm font-semibold border-b border-slate-800"><i class="fa-solid fa-comments mr-1"></i> Live Chat & Direct Message</a>
       <a href="#skills" class="mobile-nav-link block text-slate-300 hover:text-cyan-400 py-2 text-sm font-medium border-b border-slate-800">Skills</a>
       <a href="#projects" class="mobile-nav-link block text-slate-300 hover:text-cyan-400 py-2 text-sm font-medium border-b border-slate-800">Projects</a>
       <a href="#education" class="mobile-nav-link block text-slate-300 hover:text-cyan-400 py-2 text-sm font-medium border-b border-slate-800">Education</a>
@@ -66,7 +70,7 @@
         Dublin-based South African music producer, DJ, sound designer, and audio engineer. Specialising in Amapiano, Afro House, and electronic music by combining traditional African musical influences with contemporary production, sound design, and live performance.
       </p>
       
-      <!-- Streaming & Social Quick Links -->
+      <!-- Social Media & Streaming Links -->
       <div class="flex flex-wrap gap-3 mb-8">
         <a href="https://open.spotify.com/artist/1kW5zDxZdTAibIqVcF0LAl" target="_blank" rel="noopener noreferrer" class="bg-slate-900 border border-slate-800 hover:border-green-500 text-slate-200 px-4 py-2 rounded-lg text-sm flex items-center gap-2 transition">
           <i class="fa-brands fa-spotify text-green-500 text-base"></i> Spotify
@@ -80,103 +84,70 @@
         <a href="https://www.instagram.com/tsara_abh" target="_blank" rel="noopener noreferrer" class="bg-slate-900 border border-slate-800 hover:border-pink-400 text-slate-200 px-4 py-2 rounded-lg text-sm flex items-center gap-2 transition">
           <i class="fa-brands fa-instagram text-pink-400 text-base"></i> Instagram
         </a>
+        <a href="https://www.tiktok.com/@tsara_abh" target="_blank" rel="noopener noreferrer" class="bg-slate-900 border border-slate-800 hover:border-cyan-400 text-slate-200 px-4 py-2 rounded-lg text-sm flex items-center gap-2 transition">
+          <i class="fa-brands fa-tiktok text-cyan-400 text-base"></i> TikTok
+        </a>
+        <a href="https://www.linkedin.com/in/peacemoremagonya" target="_blank" rel="noopener noreferrer" class="bg-slate-900 border border-slate-800 hover:border-blue-400 text-slate-200 px-4 py-2 rounded-lg text-sm flex items-center gap-2 transition">
+          <i class="fa-brands fa-linkedin text-blue-400 text-base"></i> LinkedIn
+        </a>
       </div>
 
       <div class="flex flex-wrap gap-4">
-        <a href="#ai-assistant" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition flex items-center gap-2">
-          <i class="fa-solid fa-robot"></i> Try AI Assistant
+        <a href="#chat-box" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition flex items-center gap-2">
+          <i class="fa-solid fa-comments"></i> Send Online Message
         </a>
         <a href="#contact" class="border border-slate-700 bg-slate-900 hover:border-cyan-400 text-white font-medium px-6 py-3 rounded-xl flex items-center gap-2 transition">
-          <i class="fa-solid fa-envelope text-cyan-400"></i> Get In Touch
+          <i class="fa-solid fa-envelope text-cyan-400"></i> Direct Contact Info
         </a>
       </div>
     </div>
 
-    <!-- Profile Image Container -->
+    <!-- Enlarged Profile Image -->
     <div class="flex justify-center">
       <div class="relative w-80 h-80 sm:w-96 sm:h-96 md:w-[420px] md:h-[420px] rounded-3xl overflow-hidden border-4 border-cyan-500/80 shadow-2xl shadow-cyan-500/20">
-        <img src="tsara_profile.jpg" alt="Tsara Studio Profile" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop'">
+        <img src="tsara_profile.jpg" alt="Tsara Profile" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop'">
       </div>
     </div>
   </section>
 
-  <!-- 🤖 AI PRODUCTIVITY ASSISTANT SECTION -->
-  <section id="ai-assistant" class="bg-slate-900/80 py-16 border-y border-slate-800 relative">
-    <div class="max-w-6xl mx-auto px-6">
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
-        <div>
-          <h2 class="text-2xl md:text-3xl font-bold text-white">AI Productivity Assistant</h2>
-          <p class="text-slate-400 text-sm mt-1">Automate workplace tasks including email generation, meeting summarization, task planning, and research.</p>
-        </div>
-        <div class="flex gap-2">
-          <span class="inline-flex items-center gap-1 text-xs text-slate-400 bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Prompt Engine Active
-          </span>
-        </div>
+  <!-- 💬 ONLINE CHAT & MESSAGE BOX SECTION -->
+  <section id="chat-box" class="bg-slate-900/90 py-16 border-y border-slate-800">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-8">
+        <h2 class="text-2xl md:text-3xl font-bold text-white flex items-center justify-center gap-3">
+          <i class="fa-solid fa-comments text-cyan-400"></i> Live Online Chat Box
+        </h2>
+        <p class="text-slate-400 text-sm mt-2">Write a message or booking inquiry directly for Tsara below.</p>
       </div>
 
-      <!-- Assistant Widget Grid -->
-      <div class="grid lg:grid-cols-3 gap-6 bg-slate-950 p-6 rounded-2xl border border-slate-800 shadow-2xl">
+      <div class="bg-slate-950 border border-slate-800 rounded-2xl p-6 shadow-2xl">
         
-        <!-- Task Selection Sidebar -->
-        <div class="lg:col-span-1 space-y-3 border-b lg:border-b-0 lg:border-r border-slate-800 pb-6 lg:pb-0 lg:pr-6">
-          <h3 class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Select Workplace Automation</h3>
-          
-          <button onclick="setMode('email')" id="btn-email" class="task-btn active-task w-full text-left p-3 rounded-xl border border-cyan-500/50 bg-slate-900 flex items-center gap-3 transition">
-            <div class="p-2 rounded-lg bg-cyan-500/10 text-cyan-400"><i class="fa-solid fa-paper-plane"></i></div>
-            <div>
-              <div class="text-sm font-semibold text-white">Email Generator</div>
-              <div class="text-xs text-slate-400">Draft professional emails</div>
-            </div>
-          </button>
-
-          <button onclick="setMode('meeting')" id="btn-meeting" class="task-btn w-full text-left p-3 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-900 flex items-center gap-3 transition">
-            <div class="p-2 rounded-lg bg-purple-500/10 text-purple-400"><i class="fa-solid fa-list-check"></i></div>
-            <div>
-              <div class="text-sm font-semibold text-white">Meeting Summarizer</div>
-              <div class="text-xs text-slate-400">Extract action items & notes</div>
-            </div>
-          </button>
-
-          <button onclick="setMode('planner')" id="btn-planner" class="task-btn w-full text-left p-3 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-900 flex items-center gap-3 transition">
-            <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400"><i class="fa-solid fa-calendar-days"></i></div>
-            <div>
-              <div class="text-sm font-semibold text-white">Task Planner</div>
-              <div class="text-xs text-slate-400">Create structured roadmaps</div>
-            </div>
-          </button>
-
-          <button onclick="setMode('research')" id="btn-research" class="task-btn w-full text-left p-3 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-900 flex items-center gap-3 transition">
-            <div class="p-2 rounded-lg bg-amber-500/10 text-amber-400"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-            <div>
-              <div class="text-sm font-semibold text-white">Research Assistant</div>
-              <div class="text-xs text-slate-400">Synthesize industry insights</div>
-            </div>
-          </button>
-        </div>
-
-        <!-- Input & Output Workspace -->
-        <div class="lg:col-span-2 space-y-4 flex flex-col justify-between">
-          <div>
-            <label id="input-label" class="block text-xs font-mono text-cyan-400 mb-2">Prompt Context / Task Input:</label>
-            <textarea id="ai-input" rows="4" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-sm text-slate-200 focus:outline-none focus:border-cyan-500 transition" placeholder="Enter details or keywords here..."></textarea>
-            <div class="flex justify-between items-center mt-2">
-              <span class="text-xs text-slate-500">Ethics: AI output is structured responsibly for human review.</span>
-              <button onclick="generateAIResponse()" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-5 py-2 rounded-lg text-sm transition flex items-center gap-2">
-                <i class="fa-solid fa-bolt"></i> Generate Output
-              </button>
+        <!-- Live Chat Messages Container -->
+        <div id="chat-messages" class="bg-slate-900 border border-slate-800 rounded-xl p-4 h-64 overflow-y-auto space-y-4 mb-6">
+          <div class="flex items-start gap-3">
+            <div class="bg-cyan-500/20 text-cyan-400 p-2 rounded-lg text-xs font-bold">TSARA</div>
+            <div class="bg-slate-800/80 p-3 rounded-xl rounded-tl-none text-xs text-slate-200 max-w-lg">
+              Hello! Welcome to my website. Feel free to leave a message, ask about upcoming DJ sets, or submit booking inquiries.
             </div>
           </div>
-
-          <!-- Generated AI Output Display -->
-          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 mt-4">
-            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
-              <span class="text-xs font-mono text-slate-400"><i class="fa-solid fa-terminal mr-1"></i> AI Assistant Output:</span>
-              <button onclick="copyOutput()" class="text-xs text-cyan-400 hover:underline"><i class="fa-regular fa-copy"></i> Copy</button>
-            </div>
-            <pre id="ai-output" class="text-xs text-slate-300 font-mono whitespace-pre-wrap leading-relaxed h-40 overflow-y-auto">Click "Generate Output" or enter custom text above to produce automated AI results.</pre>
-          </div>
         </div>
+
+        <!-- Online Message Form -->
+        <form id="online-chat-form" onsubmit="handleChatMessage(event)" class="space-y-4">
+          <div class="grid md:grid-cols-2 gap-4">
+            <input type="text" id="chat-name" required placeholder="Your Name" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition">
+            <input type="email" id="chat-email" required placeholder="Your Email Address" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition">
+          </div>
+          <div class="flex gap-2">
+            <textarea id="chat-input" rows="3" required placeholder="Write your message or inquiry here..." class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-sm text-slate-100 focus:outline-none focus:border-cyan-500 transition"></textarea>
+          </div>
+          <div class="flex justify-between items-center">
+            <span id="chat-status" class="text-xs text-cyan-400 font-mono"></span>
+            <button type="submit" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-2.5 rounded-xl text-sm transition flex items-center gap-2">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </div>
+        </form>
 
       </div>
     </div>
@@ -202,9 +173,9 @@
         <!-- DJ Image -->
         <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden p-3 shadow-xl">
           <div class="w-full h-64 sm:h-72 rounded-xl overflow-hidden mb-3">
-            <img src="tsara_dj.jpg" alt="Tsara Live Performance & Broadcasting" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop'">
+            <img src="tsara_dj.jpg" alt="Tsara Live Performance" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop'">
           </div>
-          <p class="text-xs text-slate-400 text-center font-mono">Live Performance & DDR Broadcasting</p>
+          <p class="text-xs text-slate-400 text-center font-mono">Live Performance & Broadcasting</p>
         </div>
       </div>
     </div>
@@ -216,7 +187,6 @@
       <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">Technical & Professional Capabilities</h2>
       <div class="grid md:grid-cols-3 gap-6">
         
-        <!-- Music Production -->
         <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
           <h3 class="text-lg font-bold text-cyan-400 mb-4 flex items-center gap-2">
             <i class="fa-solid fa-compact-disc"></i> Production & Composition
@@ -231,7 +201,6 @@
           </ul>
         </div>
 
-        <!-- Audio Engineering & DAWs -->
         <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
           <h3 class="text-lg font-bold text-cyan-400 mb-4 flex items-center gap-2">
             <i class="fa-solid fa-sliders"></i> Engineering & Software
@@ -246,7 +215,6 @@
           </ul>
         </div>
 
-        <!-- DJing & Professional Skills -->
         <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
           <h3 class="text-lg font-bold text-cyan-400 mb-4 flex items-center gap-2">
             <i class="fa-solid fa-headphones"></i> DJing & Creative Direction
@@ -271,10 +239,9 @@
       <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">Projects & Catalog</h2>
       <div class="grid md:grid-cols-3 gap-6">
         
-        <!-- Project 1: We Play Good MusiQ -->
         <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/50 transition">
           <div class="w-full h-52 overflow-hidden">
-            <img src="tsara_pic1.jpg" alt="We Play Good MusiQ Radio Show" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=800&auto=format&fit=crop'">
+            <img src="tsara_pic1.jpg" alt="We Play Good MusiQ" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=800&auto=format&fit=crop'">
           </div>
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
@@ -285,7 +252,6 @@
           </div>
         </div>
 
-        <!-- Project 2: Make Me Feel -->
         <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/50 transition">
           <div class="w-full h-52 overflow-hidden">
             <img src="tsara_pic2.jpg" alt="Make Me Feel Single" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop'">
@@ -299,7 +265,6 @@
           </div>
         </div>
 
-        <!-- Project 3: Yanos Culture & Mixes -->
         <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/50 transition">
           <div class="w-full h-52 overflow-hidden">
             <img src="tsara_pic3.jpg" alt="Yanos Culture Mix Series" class="w-full h-full object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop'">
@@ -367,7 +332,7 @@
         </a>
       </div>
 
-      <!-- Complete Social & Streaming Profiles Grid -->
+      <!-- Social & Streaming Profiles Grid -->
       <div class="max-w-3xl mx-auto border-t border-slate-800 pt-8 mb-10">
         <h3 class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-6">Professional Links & Streaming Profiles</h3>
         <div class="flex flex-wrap justify-center gap-3">
@@ -396,9 +361,9 @@
     </div>
   </footer>
 
-  <!-- JavaScript for Navigation Tab and AI Productivity Assistant -->
+  <!-- JavaScript Logic -->
   <script>
-    // Navigation Mobile Menu Toggle
+    // Mobile Menu Toggle
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelectorAll('.mobile-nav-link');
@@ -413,70 +378,41 @@
       });
     });
 
-    // AI Assistant Interactive Logic
-    let currentMode = 'email';
-
-    const presets = {
-      email: {
-        label: "Email Topic or Key Points:",
-        defaultInput: "Requesting studio booking availability for audio mixing next Thursday at BIMM Dublin.",
-        output: (input) => `Subject: Studio Booking Inquiry - Audio Mixing Session\n\nDear Studio Management,\n\nI hope this email finds you well. I am writing to inquire about studio booking availability for an upcoming audio mixing session.\n\nContext: ${input}\n\nProposed Time: Next Thursday (Flexible hours)\nEquipment Required: Vocal tracking & DAW workstation\n\nPlease let me know if this slot is open or if alternative times are available.\n\nBest regards,\nTsara`
-      },
-      meeting: {
-        label: "Paste Meeting Notes or Audio Transcript:",
-        defaultInput: "Discussed release date for 'Make Me Feel' single. Confirmed radio premiere on Dublin Digital Radio. Next step: Finalize mastering by Tuesday.",
-        output: (input) => `📋 MEETING SUMMARY & ACTION ITEMS\n-----------------------------------\nRaw Notes: ${input}\n\nKey Decisions:\n• Target Release Date confirmed for 'Make Me Feel'\n• Radio Premiere scheduled on Dublin Digital Radio\n\nAction Items:\n[ ] Finalize audio mastering by Tuesday (Assignee: Tsara)\n[ ] Prepare promotional assets for social channels`
-      },
-      planner: {
-        label: "Project Goal / Event Name:",
-        defaultInput: "Organize live DJ event 'Yanos Culture Night' in Dublin including artist line-up and venue setup.",
-        output: (input) => `📅 STRATEGIC TASK ROADMAP\n-----------------------------------\nProject: ${input}\n\nPhase 1: Preparation (Weeks 1-2)\n- Secure venue booking and licensing\n- Draft DJ lineup and performance schedule\n\nPhase 2: Marketing & Tech Setup (Weeks 3-4)\n- Launch promotional flyers and social media campaigns\n- Verify Pioneer DJ hardware and sound system setup\n\nPhase 3: Execution\n- Conduct soundcheck and live event management`
-      },
-      research: {
-        label: "Research Topic / Music Industry Query:",
-        defaultInput: "Current trends in Amapiano music production and streaming growth in Europe.",
-        output: (input) => `🔍 RESEARCH SYNTHESIS\n-----------------------------------\nTopic: ${input}\n\nKey Takeaways:\n1. Amapiano streaming volume in European markets has grown significantly.\n2. Producers are blending traditional Log Drum basslines with European electronic synths.\n3. Independent radio stations (such as Dublin Digital Radio) play a crucial role in grassroots distribution.`
-      }
-    };
-
-    function setMode(mode) {
-      currentMode = mode;
+    // Online Chat Message Logic
+    function handleChatMessage(event) {
+      event.preventDefault();
       
-      // Update Button Styles
-      document.querySelectorAll('.task-btn').forEach(btn => {
-        btn.classList.remove('border-cyan-500/50', 'bg-slate-900');
-        btn.classList.add('border-slate-800', 'bg-slate-900/50');
-      });
-      const activeBtn = document.getElementById(`btn-${mode}`);
-      activeBtn.classList.remove('border-slate-800', 'bg-slate-900/50');
-      activeBtn.classList.add('border-cyan-500/50', 'bg-slate-900');
+      const name = document.getElementById('chat-name').value.trim();
+      const email = document.getElementById('chat-email').value.trim();
+      const text = document.getElementById('chat-input').value.trim();
+      const chatContainer = document.getElementById('chat-messages');
+      const status = document.getElementById('chat-status');
 
-      // Update Inputs
-      document.getElementById('input-label').innerText = presets[mode].label;
-      document.getElementById('ai-input').value = presets[mode].defaultInput;
-      generateAIResponse();
+      if (!name || !text) return;
+
+      // Append user message to chat window
+      const msgBubble = document.createElement('div');
+      msgBubble.className = 'flex items-start gap-3 justify-end';
+      msgBubble.innerHTML = `
+        <div class="bg-cyan-500 text-slate-950 p-3 rounded-xl rounded-tr-none text-xs font-medium max-w-lg">
+          <div class="font-bold mb-1">${name} (${email})</div>
+          <div>${text}</div>
+        </div>
+        <div class="bg-slate-800 text-slate-300 p-2 rounded-lg text-xs font-bold">YOU</div>
+      `;
+      chatContainer.appendChild(msgBubble);
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+
+      // Status indicator and form reset
+      status.innerText = "Message sent successfully! Opening email client...";
+      
+      // Trigger mailto link as backup so message delivers directly to email
+      setTimeout(() => {
+        window.location.href = `mailto:peacemoremagonya@gmail.com?subject=New Website Message from ${encodeURIComponent(name)}&body=${encodeURIComponent(text + '\n\nContact Email: ' + email)}`;
+      }, 1000);
+
+      document.getElementById('chat-input').value = '';
     }
-
-    function generateAIResponse() {
-      const inputVal = document.getElementById('ai-input').value.trim();
-      const outputElem = document.getElementById('ai-output');
-      if (!inputVal) {
-        outputElem.innerText = "Please enter context or input text above.";
-        return;
-      }
-      outputElem.innerText = presets[currentMode].output(inputVal);
-    }
-
-    function copyOutput() {
-      const text = document.getElementById('ai-output').innerText;
-      navigator.clipboard.writeText(text);
-      alert('AI Output copied to clipboard!');
-    }
-
-    // Initialize with default state
-    window.onload = () => {
-      setMode('email');
-    };
   </script>
 
 </body>
