@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tsara | Music Producer, DJ & Sound Designer</title>
+  <meta name="description" content="Professional Portfolio of Tsara - Music Producer, DJ, Sound Designer, Audio Engineer & AI Tech Enthusiast based in Dublin, Ireland.">
+  <title>Tsara | Music Producer & AI Productivity Assistant</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- FontAwesome Icons -->
@@ -11,101 +12,277 @@
 </head>
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
 
-  <!-- Navigation Header -->
-  <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+  <!-- Navigation Header with Mobile Menu Tab -->
+  <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-      <a href="#home" class="text-xl font-bold tracking-wider text-white">TSARA<span class="text-cyan-400">.</span></a>
+      
+      <!-- Desktop Menu Links -->
       <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
         <a href="#home" class="hover:text-cyan-400 transition">Home</a>
         <a href="#about" class="hover:text-cyan-400 transition">About</a>
+        <a href="#ai-assistant" class="hover:text-cyan-400 transition text-cyan-400 font-semibold"><i class="fa-solid fa-robot mr-1"></i> AI Assistant</a>
+        <a href="#skills" class="hover:text-cyan-400 transition">Skills</a>
         <a href="#projects" class="hover:text-cyan-400 transition">Projects</a>
+        <a href="#education" class="hover:text-cyan-400 transition">Education</a>
         <a href="#contact" class="hover:text-cyan-400 transition">Contact</a>
       </nav>
-      <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm transition">Book Tsara</a>
+
+      <!-- Action Button -->
+      <div class="hidden md:flex items-center gap-3">
+        <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm transition">Book Tsara</a>
+      </div>
+
+      <!-- Mobile Menu Button Tab -->
+      <div class="flex items-center justify-between w-full md:hidden">
+        <button id="menu-btn" class="text-slate-300 hover:text-white focus:outline-none flex items-center gap-2 border border-slate-800 px-3 py-2 rounded-lg bg-slate-900">
+          <i class="fa-solid fa-bars text-lg"></i>
+          <span class="text-xs font-semibold uppercase tracking-wider">Menu</span>
+        </button>
+        <a href="#contact" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-3 py-1.5 rounded-lg text-xs transition">Book Tsara</a>
+      </div>
+
+    </div>
+
+    <!-- Dropdown Mobile Menu Tab Panel -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+      <a href="#home" class="mobile-nav-link block text-slate-300 hover:text-cyan-400 py-2 text-sm font-medium border-b border-slate-800">Home</a>
+      <a href="#about" class="mobile-nav-link block text-slate-300 hover:text-cyan-400 py-2 text-sm font-medium border-b border-slate-800">About</a>
+      <a href="#ai-assistant" class="mobile-nav-link block text-cyan-400 hover:text-cyan-300 py-2 text-sm font-semibold border-b border-slate-800"><i class="fa-solid fa-robot mr-1"></i> AI Assistant</a>
+      <a href="#skills" class="mobile-nav-link block text-slate-300 hover:text-cyan-400 py-2 text-sm font-medium border-b border-slate-800">Skills</a>
+      <a href="#projects" class="mobile-nav-link block text-slate-300 hover:text-cyan-400 py-2 text-sm font-medium border-b border-slate-800">Projects</a>
+      <a href="#education" class="mobile-nav-link block text-slate-300 hover:text-cyan-400 py-2 text-sm font-medium border-b border-slate-800">Education</a>
+      <a href="#contact" class="mobile-nav-link block text-slate-300 hover:text-cyan-400 py-2 text-sm font-medium">Contact</a>
     </div>
   </header>
 
-  <!-- Hero Section (Picture 1: tsara_profile.jpg) -->
+  <!-- 🏠 Home Section (Image 1: tsara_profile.jpg) -->
   <section id="home" class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
     <div>
       <span class="text-cyan-400 font-mono text-sm tracking-widest uppercase">Dublin, Ireland</span>
       <h1 class="text-4xl md:text-6xl font-extrabold text-white mt-2 mb-4 tracking-tight">Tsara</h1>
-      <h2 class="text-lg md:text-xl text-slate-300 font-medium mb-6">Music Producer | DJ | Sound Designer | Audio Engineer</h2>
+      <h2 class="text-lg md:text-xl text-slate-300 font-medium mb-6">Music Producer | DJ | Audio Engineer | AI Productivity Integrator</h2>
       <p class="text-slate-400 leading-relaxed mb-8">
-        Combining traditional African musical influences with contemporary music production, audio engineering, and live DJ performances. Host of <em>We Play Good MusiQ</em> on Dublin Digital Radio.
+        Combining traditional African musical influences with contemporary electronic music production, audio engineering, and AI-assisted workflow automation. Host of <em>We Play Good MusiQ</em> on Dublin Digital Radio.
       </p>
       <div class="flex flex-wrap gap-4">
-        <a href="#projects" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition">Explore Projects</a>
-        <a href="https://open.spotify.com/artist/1kW5zDxZdTAibIqVcF0LAl" target="_blank" class="border border-slate-700 bg-slate-900 hover:border-cyan-400 text-white font-medium px-6 py-3 rounded-xl flex items-center gap-2 transition">
-          <i class="fa-brands fa-spotify text-green-500 text-lg"></i> Listen on Spotify
+        <a href="#ai-assistant" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition flex items-center gap-2">
+          <i class="fa-solid fa-robot"></i> Try AI Assistant
+        </a>
+        <a href="https://open.spotify.com/artist/1kW5zDxZdTAibIqVcF0LAl" target="_blank" rel="noopener noreferrer" class="border border-slate-700 bg-slate-900 hover:border-cyan-400 text-white font-medium px-6 py-3 rounded-xl flex items-center gap-2 transition">
+          <i class="fa-brands fa-spotify text-green-500 text-lg"></i> Spotify Profile
         </a>
       </div>
     </div>
     <div class="flex justify-center">
       <div class="relative w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border-2 border-cyan-500 shadow-2xl shadow-cyan-500/20">
-        <img src="tsara_profile.jpg" alt="Tsara Studio Photo" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop'">
+        <!-- IMAGE 1 -->
+        <img src="tsara_profile.jpg" alt="Tsara Studio Profile Photo" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=800&auto=format&fit=crop'">
       </div>
     </div>
   </section>
 
-  <!-- About Me Section (Picture 2: tsara_dj.jpg) -->
-  <section id="about" class="bg-slate-900/50 py-16 border-y border-slate-800">
+  <!-- 🤖 AI PRODUCTIVITY ASSISTANT SECTION -->
+  <section id="ai-assistant" class="bg-slate-900/80 py-16 border-y border-slate-800 relative">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+        <div>
+          <span class="bg-cyan-500/10 text-cyan-400 text-xs font-mono px-3 py-1 rounded-full border border-cyan-500/30">Interactive Demo</span>
+          <h2 class="text-2xl md:text-3xl font-bold text-white mt-2">AI Productivity Assistant</h2>
+          <p class="text-slate-400 text-sm">Automate workplace tasks including email generation, meeting summarization, task planning, and research.</p>
+        </div>
+        <div class="flex gap-2">
+          <span class="inline-flex items-center gap-1 text-xs text-slate-400 bg-slate-950 px-3 py-1.5 rounded-lg border border-slate-800">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Prompt Engine Active
+          </span>
+        </div>
+      </div>
+
+      <!-- Assistant Widget Grid -->
+      <div class="grid lg:grid-cols-3 gap-6 bg-slate-950 p-6 rounded-2xl border border-slate-800 shadow-2xl">
+        
+        <!-- Task Selection Sidebar -->
+        <div class="lg:col-span-1 space-y-3 border-b lg:border-b-0 lg:border-r border-slate-800 pb-6 lg:pb-0 lg:pr-6">
+          <h3 class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Select Workplace Automation</h3>
+          
+          <button onclick="setMode('email')" id="btn-email" class="task-btn active-task w-full text-left p-3 rounded-xl border border-cyan-500/50 bg-slate-900 flex items-center gap-3 transition">
+            <div class="p-2 rounded-lg bg-cyan-500/10 text-cyan-400"><i class="fa-solid fa-paper-plane"></i></div>
+            <div>
+              <div class="text-sm font-semibold text-white">Email Generator</div>
+              <div class="text-xs text-slate-400">Draft professional emails</div>
+            </div>
+          </button>
+
+          <button onclick="setMode('meeting')" id="btn-meeting" class="task-btn w-full text-left p-3 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-900 flex items-center gap-3 transition">
+            <div class="p-2 rounded-lg bg-purple-500/10 text-purple-400"><i class="fa-solid fa-list-check"></i></div>
+            <div>
+              <div class="text-sm font-semibold text-white">Meeting Summarizer</div>
+              <div class="text-xs text-slate-400">Extract action items & notes</div>
+            </div>
+          </button>
+
+          <button onclick="setMode('planner')" id="btn-planner" class="task-btn w-full text-left p-3 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-900 flex items-center gap-3 transition">
+            <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400"><i class="fa-solid fa-calendar-days"></i></div>
+            <div>
+              <div class="text-sm font-semibold text-white">Task Planner</div>
+              <div class="text-xs text-slate-400">Create structured roadmaps</div>
+            </div>
+          </button>
+
+          <button onclick="setMode('research')" id="btn-research" class="task-btn w-full text-left p-3 rounded-xl border border-slate-800 bg-slate-900/50 hover:bg-slate-900 flex items-center gap-3 transition">
+            <div class="p-2 rounded-lg bg-amber-500/10 text-amber-400"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <div>
+              <div class="text-sm font-semibold text-white">Research Assistant</div>
+              <div class="text-xs text-slate-400">Synthesize industry insights</div>
+            </div>
+          </button>
+        </div>
+
+        <!-- Input & Output Workspace -->
+        <div class="lg:col-span-2 space-y-4 flex flex-col justify-between">
+          <div>
+            <label id="input-label" class="block text-xs font-mono text-cyan-400 mb-2">Prompt Context / Task Input:</label>
+            <textarea id="ai-input" rows="4" class="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 text-sm text-slate-200 focus:outline-none focus:border-cyan-500 transition" placeholder="Enter details or keywords here..."></textarea>
+            <div class="flex justify-between items-center mt-2">
+              <span class="text-xs text-slate-500">Ethics: AI output is structured responsibly for human review.</span>
+              <button onclick="generateAIResponse()" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold px-5 py-2 rounded-lg text-sm transition flex items-center gap-2">
+                <i class="fa-solid fa-bolt"></i> Generate Output
+              </button>
+            </div>
+          </div>
+
+          <!-- Generated AI Output Display -->
+          <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 mt-4">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-2 mb-3">
+              <span class="text-xs font-mono text-slate-400"><i class="fa-solid fa-terminal mr-1"></i> AI Assistant Output:</span>
+              <button onclick="copyOutput()" class="text-xs text-cyan-400 hover:underline"><i class="fa-regular fa-copy"></i> Copy</button>
+            </div>
+            <pre id="ai-output" class="text-xs text-slate-300 font-mono whitespace-pre-wrap leading-relaxed h-40 overflow-y-auto">Click "Generate Output" or enter custom text above to produce automated AI results.</pre>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 👤 About Me Section (Image 2: tsara_dj.jpg) -->
+  <section id="about" class="py-16 border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">About Me</h2>
       <div class="grid md:grid-cols-3 gap-8 items-center">
         <div class="md:col-span-2 space-y-4 text-slate-300 leading-relaxed">
           <p>
-            I am Tsara, a South African music producer, DJ, and sound designer based in Dublin, Ireland. My musical identity is deeply rooted in Amapiano, Afro House, and modern African electronic music.
+            I am Tsara, a South African music producer, DJ, sound designer, and creative technology practitioner based in Dublin, Ireland. My musical identity is deeply rooted in Amapiano, Afro House, and modern electronic music culture.
           </p>
           <p>
-            Currently studying Modern Music at BIMM Dublin, my work covers music production, composition, vocal tracking, sound design, audio editing, and live DJ sets. Through my weekly <em>We Play Good MusiQ</em> radio show on Dublin Digital Radio, I promote musical discovery, cultural exchange, and platform opportunities for emerging artists.
+            Currently pursuing studies in Modern Music at BIMM Dublin alongside AI workflow integration, my work spans music production, arrangement, vocal tracking, sound design, audio editing, and live performance. Through my weekly <em>We Play Good MusiQ</em> radio show on Dublin Digital Radio, I promote musical discovery and cultural exchange.
           </p>
         </div>
+        <!-- IMAGE 2 -->
         <div class="bg-slate-900 border border-slate-800 rounded-xl overflow-hidden p-2">
-          <img src="tsara_dj.jpg" alt="Tsara DJing Live" class="rounded-lg w-full h-48 object-cover mb-3" onerror="this.src='https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop'">
-          <p class="text-xs text-slate-400 text-center font-mono">Live Performance & Radio Presentation</p>
+          <img src="tsara_dj.jpg" alt="Tsara Live Performance" class="rounded-lg w-full h-48 object-cover mb-3" onerror="this.src='https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=800&auto=format&fit=crop'">
+          <p class="text-xs text-slate-400 text-center font-mono">Live Performance & Broadcasting</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Featured Projects Gallery (Pictures 3, 4, 5: tsara_pic1.jpg, tsara_pic2.jpg, tsara_pic3.jpg) -->
-  <section id="projects" class="py-16">
+  <!-- 💻 Technical & Soft Skills Section -->
+  <section id="skills" class="py-16 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">Skills & Technical Capabilities</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Technical Skills -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+          <h3 class="text-lg font-bold text-cyan-400 mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-sliders"></i> Technical & AI Skills
+          </h3>
+          <ul class="space-y-3 text-slate-300 text-sm">
+            <li class="flex items-center justify-between border-b border-slate-800 pb-2">
+              <span>Prompt Engineering & AI Productivity Tools</span>
+              <span class="text-xs font-mono text-cyan-400">ChatGPT / Gemini / Notion AI</span>
+            </li>
+            <li class="flex items-center justify-between border-b border-slate-800 pb-2">
+              <span>Logic Pro X / Ableton Live / FL Studio</span>
+              <span class="text-xs font-mono text-cyan-400">DAW Proficiency</span>
+            </li>
+            <li class="flex items-center justify-between border-b border-slate-800 pb-2">
+              <span>Mixing, Mastering & Vocal Tracking</span>
+              <span class="text-xs font-mono text-cyan-400">Audio Engineering</span>
+            </li>
+            <li class="flex items-center justify-between border-b border-slate-800 pb-2">
+              <span>Pioneer Rekordbox & Live DJing</span>
+              <span class="text-xs font-mono text-cyan-400">Performance</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+          <h3 class="text-lg font-bold text-cyan-400 mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-users"></i> Professional & Soft Skills
+          </h3>
+          <ul class="space-y-3 text-slate-300 text-sm">
+            <li class="flex items-center justify-between border-b border-slate-800 pb-2">
+              <span>Radio Curation & Live Hosting</span>
+              <span class="text-xs font-mono text-cyan-400">Broadcasting</span>
+            </li>
+            <li class="flex items-center justify-between border-b border-slate-800 pb-2">
+              <span>Event Production & Management</span>
+              <span class="text-xs font-mono text-cyan-400">Coordination</span>
+            </li>
+            <li class="flex items-center justify-between border-b border-slate-800 pb-2">
+              <span>Cross-Cultural Collaboration</span>
+              <span class="text-xs font-mono text-cyan-400">Communication</span>
+            </li>
+            <li class="flex items-center justify-between border-b border-slate-800 pb-2">
+              <span>Ethical AI Implementation & Asset Management</span>
+              <span class="text-xs font-mono text-cyan-400">Strategy</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 📂 Featured Projects Section (Images 3, 4, 5: tsara_pic1.jpg, tsara_pic2.jpg, tsara_pic3.jpg) -->
+  <section id="projects" class="bg-slate-900/30 py-16 border-b border-slate-800">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="text-2xl md:text-3xl font-bold text-white mb-8">Featured Projects & Releases</h2>
       <div class="grid md:grid-cols-3 gap-6">
         
-        <!-- Project 1 -->
+        <!-- IMAGE 3: tsara_pic1.jpg -->
         <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/50 transition">
-          <img src="tsara_pic1.jpg" alt="We Play Good MusiQ" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=800&auto=format&fit=crop'">
+          <img src="tsara_pic1.jpg" alt="We Play Good MusiQ Radio Show" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=800&auto=format&fit=crop'">
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <h3 class="text-lg font-bold text-white mb-2">We Play Good MusiQ</h3>
-              <p class="text-sm text-slate-400 mb-4">Weekly radio show on Dublin Digital Radio highlighting African electronic music, guest mix curation, and live performance.</p>
+              <p class="text-sm text-slate-400 mb-4">Weekly radio show hosted on Dublin Digital Radio, promoting African electronic music, guest mix curation, and live broadcasts.</p>
             </div>
             <span class="text-xs text-cyan-400 font-mono">Radio Show / Curation</span>
           </div>
         </div>
 
-        <!-- Project 2 -->
+        <!-- IMAGE 4: tsara_pic2.jpg -->
         <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/50 transition">
           <img src="tsara_pic2.jpg" alt="Make Me Feel Single" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=800&auto=format&fit=crop'">
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <h3 class="text-lg font-bold text-white mb-2">Make Me Feel — Tsara ft. Lady LeSoul</h3>
-              <p class="text-sm text-slate-400 mb-4">Original Amapiano single demonstrating vocal production, arranging, and independent mixing/release management.</p>
+              <p class="text-sm text-slate-400 mb-4">Original Amapiano single release highlighting vocal production, audio arrangement, mixing, and digital distribution.</p>
             </div>
             <span class="text-xs text-cyan-400 font-mono">Original Music Production</span>
           </div>
         </div>
 
-        <!-- Project 3 -->
+        <!-- IMAGE 5: tsara_pic3.jpg -->
         <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col group hover:border-cyan-500/50 transition">
-          <img src="tsara_pic3.jpg" alt="Yanos Culture" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop'">
+          <img src="tsara_pic3.jpg" alt="Yanos Culture Mix Series" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=800&auto=format&fit=crop'">
           <div class="p-6 flex-1 flex flex-col justify-between">
             <div>
               <h3 class="text-lg font-bold text-white mb-2">Yanos Culture & Mix Series</h3>
-              <p class="text-sm text-slate-400 mb-4">Amapiano and Afro House mix series including <em>Yanos Culture Vol. 1</em> and <em>Unplugged Deep Sunday Sessions</em>.</p>
+              <p class="text-sm text-slate-400 mb-4">Amapiano and Afro House DJ mix series including <em>Yanos Culture Vol. 1</em> and <em>Unplugged Deep Sunday Sessions</em>.</p>
             </div>
             <span class="text-xs text-cyan-400 font-mono">DJ Mix Series & Podcast</span>
           </div>
@@ -115,19 +292,164 @@
     </div>
   </section>
 
-  <!-- Contact & Footer -->
-  <footer id="contact" class="bg-slate-900 border-t border-slate-800 py-12">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-2xl font-bold text-white mb-4">Get In Touch</h2>
-      <p class="text-slate-400 mb-6 max-w-md mx-auto">Available for live DJ bookings, radio appearances, sound design projects, and production collaborations.</p>
-      <div class="flex justify-center gap-6 text-2xl text-slate-400 mb-8">
-        <a href="https://open.spotify.com/artist/1kW5zDxZdTAibIqVcF0LAl" target="_blank" class="hover:text-green-500 transition"><i class="fa-brands fa-spotify"></i></a>
-        <a href="https://instagram.com" target="_blank" class="hover:text-pink-500 transition"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://soundcloud.com" target="_blank" class="hover:text-orange-500 transition"><i class="fa-brands fa-soundcloud"></i></a>
+  <!-- 🎓 Education & 📜 Certifications Section -->
+  <section id="education" class="py-16 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Education -->
+        <div>
+          <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+            <i class="fa-solid fa-graduation-cap text-cyan-400"></i> Education
+          </h2>
+          <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl">
+            <span class="text-xs font-mono text-cyan-400">Current Studies</span>
+            <h3 class="text-lg font-bold text-white mt-1">BA (Hons) in Modern Music</h3>
+            <p class="text-slate-400 text-sm mb-2">BIMM Institute Dublin — Dublin, Ireland</p>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              Focusing on music production, sound engineering, composition, and digital technology integration.
+            </p>
+          </div>
+        </div>
+
+        <!-- Certifications & Training -->
+        <div>
+          <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-2">
+            <i class="fa-solid fa-certificate text-cyan-400"></i> Certifications & Training
+          </h2>
+          <div class="bg-slate-900 border border-slate-800 p-6 rounded-2xl space-y-4">
+            <div>
+              <h3 class="text-md font-bold text-white">Audio Engineering & Vocal Tracking Certificate</h3>
+              <p class="text-slate-400 text-xs">Modern Studio Recording Techniques</p>
+            </div>
+            <div class="border-t border-slate-800 pt-3">
+              <h3 class="text-md font-bold text-white">AI Productivity & Workflow Automation</h3>
+              <p class="text-slate-400 text-xs">Prompt Engineering, Generative AI & Task Automation</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <p class="text-xs text-slate-500">&copy; 2026 Tsara. All rights reserved.</p>
+    </div>
+  </section>
+
+  <!-- 📞 Contact Section & Downloadable CV -->
+  <footer id="contact" class="bg-slate-900 py-16">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-white mb-4">Get In Touch</h2>
+      <p class="text-slate-400 mb-8 max-w-lg mx-auto">
+        Available for live DJ bookings, radio appearances, sound design commissions, and production collaborations.
+      </p>
+
+      <!-- Contact Info Cards -->
+      <div class="flex flex-wrap justify-center gap-6 mb-10">
+        <a href="mailto:purezamlambo@gmail.com" class="bg-slate-950 border border-slate-800 hover:border-cyan-400 px-6 py-3 rounded-xl flex items-center gap-3 text-slate-300 transition">
+          <i class="fa-solid fa-envelope text-cyan-400"></i>
+          <span>Contact via Email</span>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="bg-slate-950 border border-slate-800 hover:border-cyan-400 px-6 py-3 rounded-xl flex items-center gap-3 text-slate-300 transition">
+          <i class="fa-brands fa-github text-cyan-400"></i>
+          <span>GitHub Repository</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="bg-slate-950 border border-slate-800 hover:border-cyan-400 px-6 py-3 rounded-xl flex items-center gap-3 text-slate-300 transition">
+          <i class="fa-brands fa-linkedin text-cyan-400"></i>
+          <span>LinkedIn Profile</span>
+        </a>
+      </div>
+
+      <!-- Downloadable CV Button -->
+      <div class="mb-12">
+        <a href="Tsara_CV.pdf" download class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold px-6 py-3 rounded-xl border border-slate-700 transition">
+          <i class="fa-solid fa-file-arrow-down text-cyan-400"></i> Download CV (PDF)
+        </a>
+      </div>
+
+      <p class="text-xs text-slate-500">&copy; 2026 Tsara. Designed & Developed by Mornia Monareng.</p>
     </div>
   </footer>
+
+  <!-- JavaScript for Navigation Tab and AI Productivity Assistant -->
+  <script>
+    // Navigation Mobile Menu Toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelectorAll('.mobile-nav-link');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // AI Assistant Interactive Logic
+    let currentMode = 'email';
+
+    const presets = {
+      email: {
+        label: "Email Topic or Key Points:",
+        defaultInput: "Requesting studio booking availability for audio mixing next Thursday at BIMM Dublin.",
+        output: (input) => `Subject: Studio Booking Inquiry - Audio Mixing Session\n\nDear Studio Management,\n\nI hope this email finds you well. I am writing to inquire about studio booking availability for an upcoming audio mixing session.\n\nContext: ${input}\n\nProposed Time: Next Thursday (Flexible hours)\nEquipment Required: Vocal tracking & DAW workstation\n\nPlease let me know if this slot is open or if alternative times are available.\n\nBest regards,\nTsara`
+      },
+      meeting: {
+        label: "Paste Meeting Notes or Audio Transcript:",
+        defaultInput: "Discussed release date for 'Make Me Feel' single. Confirmed radio premiere on Dublin Digital Radio. Next step: Finalize mastering by Tuesday.",
+        output: (input) => `📋 MEETING SUMMARY & ACTION ITEMS\n-----------------------------------\nRaw Notes: ${input}\n\nKey Decisions:\n• Target Release Date confirmed for 'Make Me Feel'\n• Radio Premiere scheduled on Dublin Digital Radio\n\nAction Items:\n[ ] Finalize audio mastering by Tuesday (Assignee: Tsara)\n[ ] Prepare promotional assets for social channels`
+      },
+      planner: {
+        label: "Project Goal / Event Name:",
+        defaultInput: "Organize live DJ event 'Yanos Night' in Dublin including artist line-up and venue setup.",
+        output: (input) => `📅 STRATEGIC TASK ROADMAP\n-----------------------------------\nProject: ${input}\n\nPhase 1: Preparation (Weeks 1-2)\n- Secure venue booking and licensing\n- Draft DJ lineup and performance schedule\n\nPhase 2: Marketing & Tech Setup (Weeks 3-4)\n- Launch promotional flyers and social media campaigns\n- Verify DJ hardware and sound system setup\n\nPhase 3: Execution\n- Conduct soundcheck and live event management`
+      },
+      research: {
+        label: "Research Topic / Music Industry Query:",
+        defaultInput: "Current trends in Amapiano music production and streaming growth in Europe.",
+        output: (input) => `🔍 RESEARCH SYNTHESIS\n-----------------------------------\nTopic: ${input}\n\nKey Takeaways:\n1. Amapiano streaming volume in European markets has grown by over 45% year-over-year.\n2. Producers are blending traditional Log Drum basslines with European electronic synths.\n3. Independent radio stations (such as Dublin Digital Radio) play a crucial role in grassroots distribution.`
+      }
+    };
+
+    function setMode(mode) {
+      currentMode = mode;
+      
+      // Update Button Styles
+      document.querySelectorAll('.task-btn').forEach(btn => {
+        btn.classList.remove('border-cyan-500/50', 'bg-slate-900');
+        btn.classList.add('border-slate-800', 'bg-slate-900/50');
+      });
+      const activeBtn = document.getElementById(`btn-${mode}`);
+      activeBtn.classList.remove('border-slate-800', 'bg-slate-900/50');
+      activeBtn.classList.add('border-cyan-500/50', 'bg-slate-900');
+
+      // Update Inputs
+      document.getElementById('input-label').innerText = presets[mode].label;
+      document.getElementById('ai-input').value = presets[mode].defaultInput;
+      generateAIResponse();
+    }
+
+    function generateAIResponse() {
+      const inputVal = document.getElementById('ai-input').value.trim();
+      const outputElem = document.getElementById('ai-output');
+      if (!inputVal) {
+        outputElem.innerText = "Please enter context or input text above.";
+        return;
+      }
+      outputElem.innerText = presets[currentMode].output(inputVal);
+    }
+
+    function copyOutput() {
+      const text = document.getElementById('ai-output').innerText;
+      navigator.clipboard.writeText(text);
+      alert('AI Output copied to clipboard!');
+    }
+
+    // Initialize with default state
+    window.onload = () => {
+      setMode('email');
+    };
+  </script>
 
 </body>
 </html>
